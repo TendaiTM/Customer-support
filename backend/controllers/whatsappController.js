@@ -1,0 +1,8 @@
+const express = require("express");
+const router = express.Router();
+const whatsappController = require("../controllers/whatsappController");
+
+// POST /send-message
+router.post("/send-message", whatsappController.sendMessage);
+
+module.exports = router;
